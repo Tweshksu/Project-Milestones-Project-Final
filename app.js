@@ -1,10 +1,10 @@
 const app = require('express')();
-const port = 9222;
+const port = 9222; //port #
 
 // Middleware to parse URL-encoded bodies
 app.use((require('express')).urlencoded({ extended: true }));
 
-// Serve the HTML file on GET request to the root
+// Serve the HTML file on request to the root
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
