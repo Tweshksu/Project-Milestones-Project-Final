@@ -1,27 +1,130 @@
-body {
-    font-family: Arial, sans-serif;
+/*default browser styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0; /* gray background */
+}
+
+/* Header styles */
 header {
-    background-color: #333;
+    background: #005f99; /* Darker blue header code */
     color: white;
-    padding: 1em;
+    padding: 20px 0;
     text-align: center;
 }
+
+h1 {
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    background: #008c4a; /* Green for navigation */
+    padding: 10px 0;
+}
+
 nav a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
 }
+
+nav a:hover {
+    background: #00743b; /* Darker green on hover */
+}
+
+/* Main content style */
 main {
     padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white; /* White background for main content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
-form label {
-    display: block;
-    margin-top: 10px;
+
+/* Section style */
+section {
+    margin-bottom: 20px;
 }
-form input, form textarea, form button {
-    width: 100%;
-    margin-top: 5px;
+
+h2 {
+    color: #005f99; /* Consistent darker blue for headings */
+    margin-bottom: 10px;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+textarea {
+    resize: vertical; /* Allow users to resize the textarea vertically */
+}
+
+button {
+    padding: 10px;
+    background: #005f99; /* Blue for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #007acc; /* Lighter blue on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #f0f0f0; /* Light gray for footer */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav a {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
 }
